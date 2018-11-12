@@ -4,9 +4,9 @@ import { NgxEchartsModule } from 'ngx-echarts';
 
 import { ThemeModule } from '../../@theme/theme.module';
 import { DashboardComponent } from './dashboard.component';
+import { ArmStatusComponent } from '../../arm-status/arm-status.component';
 import { DevicesComponent } from './../../devices/devices.component';
 import { DeviceDetailComponent } from './../../device-detail/device-detail.component';
-import { MessagesComponent } from './../../messages/messages.component';
 
 
 
@@ -19,8 +19,8 @@ import { MessagesComponent } from './../../messages/messages.component';
   declarations: [
     DashboardComponent,
     DevicesComponent,
-    DeviceDetailComponent,
-    MessagesComponent
+    ArmStatusComponent,
+    DeviceDetailComponent
   ],
 })
 export class DashboardModule { }

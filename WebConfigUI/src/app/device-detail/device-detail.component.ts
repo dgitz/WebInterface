@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Device } from '../../classes/device';
-import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { Device } from '../../classes/auto_generated/jsonclass';
 
 @Component({
   selector: 'app-device-detail',
@@ -11,7 +10,7 @@ export class DeviceDetailComponent implements OnInit {
 
   @Input() device: Device;
   path: string;
-  constructor(public _DomSanitizationService: DomSanitizer) {
+  constructor() {
    
    }
 
@@ -23,8 +22,7 @@ export class DeviceDetailComponent implements OnInit {
     if(this.device != undefined)
     {
       this.path = "assets/devicelibrary/" + this.device.PartNumber + "/MEDIA/" + this.device.PartNumber + ".png";
-      //this.path = this._DomSanitizationService.bypassSecurityTrustUrl("/home/robot/Dropbox/FASTRobotics/Library/" + this.device.PartNumber + "/MEDIA/" + this.device.PartNumber + ".jpg");
-    }
+        }
   }
 
 }

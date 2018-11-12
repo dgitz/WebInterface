@@ -1,56 +1,212 @@
-import { Device, DeviceTree } from './../classes/device';
+import { Device } from './../classes/auto_generated/jsonclass';
 
 export const MOCKDATA_DEVICES: any = {
-    "ID":43795,
-    "data":{
-        "devicelist":[{
-            "DeviceParent":"None",
-            "PartNumber":"100003",
-            "DeviceName":"ControlModule1",
-            "DeviceType":"ControlModule",
-            "PrimaryIP":"10.0.0.174",
-            "Architecture":"armv7l",
-            "Capabilities":["ROS"],
-            "BoardCount":0,
-            "HatCount":2,
-            "ShieldCount":0,
-            "SensorCount":0
-        },{
-            "DeviceParent":"ControlModule1",
-            "PartNumber":"UNKNOWN",
-            "DeviceName":"TerminalHat1",
-            "DeviceType":"TerminalHat",
-            "PrimaryIP":"",
-            "Architecture":"",
-            "Capabilities":["GPIO"],
-            "BoardCount":0,
-            "HatCount":0,
-            "ShieldCount":0,
-            "SensorCount":0
-        },{
-            "DeviceParent":"ControlModule1",
-            "PartNumber":"625004",
-            "DeviceName":"PWMHat1",
-            "DeviceType":"ServoHat",
-            "PrimaryIP":"",
-            "Architecture":"",
-            "Capabilities":["GPIO"],
-            "BoardCount":0,
-            "HatCount":0,
-            "ShieldCount":0,
-            "SensorCount":0
-        },{
-            "DeviceParent":"ControlModule1",
-            "PartNumber":"160002",
-            "DeviceName":"LeftMicrophone",
-            "DeviceType":"Microphone",
-            "PrimaryIP":"",
-            "Architecture":"",
-            "Capabilities":["mono"],
-            "BoardCount":0,
-            "HatCount":0,
-            "ShieldCount":0,
-            "SensorCount":0
-        }]
-    }
+	"ID": 43795,
+	"data": {
+		"devicelist": [{
+			"DeviceParent": "None",
+			"PartNumber": "UNKNOWN",
+			"DeviceName": "dgitzrosmaster",
+			"DeviceType": "ComputeModule",
+			"PrimaryIP": "10.0.0.111",
+			"Architecture": "x86_64",
+			"Capabilities": ["ROS"],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "None",
+			"PartNumber": "100003",
+			"DeviceName": "ControlModule1",
+			"DeviceType": "ControlModule",
+			"PrimaryIP": "10.0.0.174",
+			"Architecture": "armv7l",
+			"Capabilities": ["ROS"],
+			"BoardCount": 0,
+			"HatCount": 2,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "ControlModule1",
+			"PartNumber": "110010",
+			"DeviceName": "RaspiCam1",
+			"DeviceType": "RaspiberryPiCamera",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": ["CameraStream"],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "ControlModule1",
+			"PartNumber": "UNKNOWN",
+			"DeviceName": "TerminalHat1",
+			"DeviceType": "TerminalHat",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": ["GPIO"],
+			"BoardCount": 0,
+			"HatCount": 3,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "ControlModule1",
+			"PartNumber": "625004",
+			"DeviceName": "PWMHat1",
+			"DeviceType": "ServoHat",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": ["GPIO"],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "ControlModule1",
+			"PartNumber": "160002",
+			"DeviceName": "LeftMicrophone",
+			"DeviceType": "Microphone",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": ["mono"],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "ControlModule1",
+			"PartNumber": "160002",
+			"DeviceName": "RightMicrophone",
+			"DeviceType": "Microphone",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": ["mono"],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "ControlModule1",
+			"PartNumber": "160000",
+			"DeviceName": "AudioAmplifier1",
+			"DeviceType": "AudioAmplifier",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": [],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "AudioAmplifier1",
+			"PartNumber": "160001",
+			"DeviceName": "FLSpeaker",
+			"DeviceType": "Speaker",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": [],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "AudioAmplifier1",
+			"PartNumber": "160001",
+			"DeviceName": "BLSpeaker",
+			"DeviceType": "Speaker",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": [],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "AudioAmplifier1",
+			"PartNumber": "160001",
+			"DeviceName": "FRSpeaker",
+			"DeviceType": "Speaker",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": [],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "AudioAmplifier1",
+			"PartNumber": "160001",
+			"DeviceName": "BRSpeaker",
+			"DeviceType": "Speaker",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": [],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "None",
+			"PartNumber": "100003",
+			"DeviceName": "ControlModule2",
+			"DeviceType": "ControlModule",
+			"PrimaryIP": "10.0.0.110",
+			"Architecture": "armv7l",
+			"Capabilities": ["ROS"],
+			"BoardCount": 1,
+			"HatCount": 2,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "ControlModule2",
+			"PartNumber": "617003",
+			"DeviceName": "LCD1",
+			"DeviceType": "LCD",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": [],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}, {
+			"DeviceParent": "ControlModule2",
+			"PartNumber": "100005",
+			"DeviceName": "ArduinoBoard1",
+			"DeviceType": "ArduinoBoard",
+			"PrimaryIP": "",
+			"Architecture": "ArduinoMega",
+			"Capabilities": [],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 4
+		}, {
+			"DeviceParent": "ControlModule2",
+			"PartNumber": "100007",
+			"DeviceName": "GPIOHat1",
+			"DeviceType": "GPIOHat",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": ["GPIO"],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 4
+		}, {
+			"DeviceParent": "ControlModule2",
+			"PartNumber": "UNKNOWN",
+			"DeviceName": "TerminalHat2",
+			"DeviceType": "TerminalHat",
+			"PrimaryIP": "",
+			"Architecture": "",
+			"Capabilities": ["GPIO"],
+			"BoardCount": 0,
+			"HatCount": 0,
+			"ShieldCount": 0,
+			"SensorCount": 0
+		}]
+	}
 }

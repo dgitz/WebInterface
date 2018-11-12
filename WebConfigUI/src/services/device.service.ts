@@ -2,9 +2,8 @@ import { Injectable } from '@angular/core';
 
 import { Observable, of } from 'rxjs';
 
-import { Device,DeviceTree } from './../classes/device';
+import { Device } from './../classes/auto_generated/jsonclass';
 import { MOCKDATA_DEVICES } from './../mockdata/mock-devices';
-import { MessageService } from './../messages/message.service';
 import { catchError, map, tap,retry } from 'rxjs/operators';
 import { HttpClient, HttpHeaders,HttpErrorResponse } from '@angular/common/http';
 import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
@@ -17,8 +16,7 @@ import { USE_MOCK_DATA } from '../app/constants'
 export class DeviceService {
 
   devices: Device[];
-  trees: DeviceTree[];
-  constructor( private http: HttpClient,private messageService: MessageService) { }
+  constructor( private http: HttpClient) { }
   getDevices() {
     if(USE_MOCK_DATA == true)
     {

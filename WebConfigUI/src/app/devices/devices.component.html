@@ -2,7 +2,8 @@
   <li *ngFor="let device of devices"
     [class.selected]="device === selectedDevice"
     (click)="onSelect(device)">
-    <span class="badge">{{device.DeviceName}}:{{device.ID}} ({{device.DeviceType}})</span>
+    <span class="badge">{{device.DeviceName}} ({{device.DeviceType}})</span>
+
   </li>
 </ul>
 
